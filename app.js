@@ -3,6 +3,7 @@
 // Execute this code only AFTER the document is ready
 // Hint: use jQuery's `$(document).ready`
 $(document).ready(function() {
+  var $reset = $('.reset');
   $squares = $('.square p'); 
   $squareBorders = $('.square');
   var $playerX = $('#player_x');
@@ -53,7 +54,7 @@ $(document).ready(function() {
     // keep track of how many moves have been made
     // max 9 before a win or tie
     playCount = 0;
-      };
+  })};
 
   // A starter Player constructor.
   function Player(team) {
