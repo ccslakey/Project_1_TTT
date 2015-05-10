@@ -7,13 +7,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="main.css">
   <!-- Require jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
 </head>
 <body>
   <!-- HTML Body -->
-  <h1>Tic Tac Toe</h1>
-  <img src="http://www.cs.utah.edu/~gk/atwork/img/hevequip2.gif" alt="under construction"></img>
+  <h1 class='title'>Tic Tac Toe</h1>
   <!-- Tic Tac Toe Board here -->
+  <div id='board'>
+      <div class='players'>
+        <p id='player_x'>Player X </p>
+        <p id='player_o'>Player O </p>
+      </div>
+
+      <div class='reset'>
+        <button>Reset</button>
+      </div>
+
+      <br>
+
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <br>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <br>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+
+    </div>
   <!-- Reset button -->
 </body>
 </html>
