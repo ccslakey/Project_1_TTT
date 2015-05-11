@@ -1,3 +1,7 @@
+body{
+  background-image: url("http://i.imgur.com/rxZBKCJ.png");
+  background-position: center;
+}
 #board {
   width: 32em;
   height: 32em;
@@ -5,27 +9,23 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 .title {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
 }
-
 .players {
   position: relative;
   display: inline-block;
   left: 2em;
 }
-
 .reset {
   position: absolute;
   display: inline-block;
   top: 2em;
   right: 3em;
 }
-
 .square {
   display: inline-block;
   border: 3px solid black;
@@ -33,7 +33,6 @@
   height: 10em;
   margin-bottom: 1px;
 }
-
 .win {
   display: inline-block;
   border: 3px solid yellow;
@@ -45,34 +44,36 @@
 /* display: table-cell is required in order to use vertical-align
  This allows for an X or O perfectly centered in the p element */
 .blank {
-  display: table-cell;
-  /* inherit setting from parent element's class */
+  display: table-cell;  /* inherit setting from parent element's class */
   width: inherit;
   height: inherit;
   font-size: 16px;
   text-align: center;
-  vertical-align: middle;
-  /*background-color: #D8D8D8;*/
+  vertical-align: middle;  /*background-color: #D8D8D8;*/
 }
-
 .X {
   display: table-cell;
   width: inherit;
   height: inherit;
   font-family: Arial;
-  font-size: 100px;
+  font-size: 50px;
   text-align: center;
   vertical-align: middle;
-  background-color: #81F7F3;
+  background-image: url("http://i.imgur.com/lw3WIJR.jpg");
+  background-attachment: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-
 .O {
   display: table-cell;
   width: inherit;
   height: inherit;
   font-family: Arial;
-  font-size: 100px;
+  font-size: 50px;
   text-align: center;
   vertical-align: middle;
-  background-color: #81F781;
+  background-image: url("http://i.imgur.com/5Kho0h3.jpg");
+  background-attachment: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
 }

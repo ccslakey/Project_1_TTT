@@ -3,11 +3,8 @@
 // Execute this code only AFTER the document is ready
 // Hint: use jQuery's `$(document).ready`
 $(document).ready(function() {
-  var $reset = $('.reset');
   $squares = $('.square p'); 
   $squareBorders = $('.square');
-  var $playerX = $('#player_x');
-  var $playerO = $('#player_o');
   var turn = 'X';
   var playCount = 0;
   var xConsecWins = 0;
@@ -27,19 +24,19 @@ $(document).ready(function() {
   // Remember: prototypes are shared functions between all game instances
   Game.prototype.nextPlayer = function() {
     if (turn === 'X' ) {
-      $playerO.html('Player O ');
-      $playerX.html('Player X &diams; ');
+      $('#player_o').html('Player O ');
+      $('#player_x').html('Player X &diams; ');
     }
     else {
-      $playerO.html('Player O &diams; ');
-      $playerX.html('Player X ');
+      $('#player_o').html('Player O &diams; ');
+      $('#player_x').html('Player X ');
     }
 
   };
 
   // `Game.prototype.init` kicks off a new game with a board and two players
   Game.prototype.init = function() {
-    $reset.on('click', function() {
+    $('.reset').on('click', function() {
     $squares.each(function() {
       $(this).html('');
       $(this).removeClass().addClass('blank');
@@ -136,13 +133,13 @@ $(document).ready(function() {
       oConsecWins = 0;
       if (++xConsecWins === 3)
         // playerX.innerHTML = 'Player X - <strong>HAT TRICK !!!</strong>';
-        $playerX.text('Player X - <strong>HAT TRICK !!!</strong>');
+        $('#player_x').html('Player X - <strong>HAT TRICK !!!</strong>');
     }
     else {
       xConsecWins = 0;
       if (++oConsecWins === 3);
         // playerO.innerHTML = 'Player O - <strong>HAT TRICK !!!</strong>';
-        $playerO.text('Player O - <strong>HAT TRICK !!!</strong>');
+        $('#player_o').html('Player O - <strong>HAT TRICK !!!</strong>');
     }
   }
 
